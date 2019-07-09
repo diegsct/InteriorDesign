@@ -1,0 +1,73 @@
+.header{
+    .navb{
+        background: $white;
+        height: 100px;
+        .logo{
+            @media(max-width:767px){
+                height: 150px;
+                width: 60%;
+                text-align: center;
+            }
+        }
+        .toggle-btn{
+            width: calc(40% - 20px);
+            text-align: right;
+        }
+        .nav-menu{
+            li{
+                padding: 0px 20px;
+                height: 100%;
+                display: flex;
+                font-weight: 700;
+                align-items: center;
+                &:hover{
+                    border-top: 1px solid $goldest;
+                    a{
+                        color: $gold;
+                    }
+                }
+                a{
+                    text-align: center;
+                }
+            }
+            height: 100px;
+            @media(max-width:767px){
+                height: auto;
+            }
+        }
+        @media(max-width:767px){
+            height: auto;
+        }
+    }
+    height: 75vh;
+    background: $marmol;
+    .slider-content{
+        .vertical-content{
+            display: flex;
+            flex-direction: column-reverse;
+            position: relative;
+            background: yellow;
+            width: 200px;
+            height: 100%;
+            p{
+                transform: rotateZ(270deg);
+                position: absolute;
+                bottom: 90px;
+                span{
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+            
+            }
+        }
+        .slider{
+            height: 100%;
+            width: calc(100% - 200px);
+            background: pink;
+        }
+        position: relative;
+        display: flex;
+        height: calc(75vh - 120px);
+    }
+    
+}
