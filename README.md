@@ -2,7 +2,7 @@
 > This is a website template with responsive design
 
 This is a landscape template for a website. This special template is for a designer named Laura.
-![](header.png)
+
 
 ## Technologies
 
