@@ -1,32 +1,147 @@
+* {
+    text-decoration: none !important;
+    list-style: none !important;
+}
 
-*{
-    color: $black;
-    text-decoration: none;
+body {
+    background: $marmol;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+p,
+a {
     font-family: $raleway;
 }
-body{
-    color: $black;
-    text-decoration: none;
-    font-family: $raleway;
+
+h1,
+h2,
+h3 {
+    font-family: $dm;
+    margin-bottom: 30px !important;
 }
-a{
-    text-decoration: none;
-    color: $black;
-    &:hover{
-        text-decoration: none;
+
+h1,
+.h1 {
+    font-size: 6rem;
+
+    @media(max-width: 1600px) {
+        font-size: 5rem;
+    }
+
+    @media(max-width: 1200px) {
+        font-size: 4rem;
+    }
+
+    @media(max-width: 992px) {
+        font-size: 3rem;
+    }
+
+    @media(max-width: 576px) {
+        font-size: 3rem;
+        text-align: center;
     }
 }
-li{
-    list-style: none;
-}
-img{
+
+img {
     max-width: 100%;
 }
 
-// CLASES
-.logo{
-    height: 100px;
-    img{
+.logo {
+    height: 120px;
+    padding: 10px 0;
+
+    img {
         max-height: 100%;
+    }
+}
+
+.row,
+.container {
+    padding: 0;
+}
+
+.pad-tb {
+    padding: 50px 0;
+}
+
+.pad-100 {
+    padding: 100px;
+}
+.mgn-b-3 {
+    margin-bottom: 30px;
+}
+.mgn-t-3{
+    margin-top: 30px;
+}
+.mgn-tb-3 {
+    margin: 30px 0;
+}
+.mgn-b-5 {
+    margin-bottom: 50px;
+}
+.mgn-t-5{
+    margin-top: 50px;
+}
+.mgn-tb-5 {
+    margin: 50px 0;
+}
+
+.button {
+    padding: 15px 30px;
+    border: 1px solid $black;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    outline: none;
+    color: $black;
+    display: inline-block; 
+    text-transform: capitalize;
+    &:hover,&:focus,&:active{
+        outline: none;
+        color: $black;
+    }
+}
+
+.gold {
+    border-color: $goldest;
+    color: $gold;
+    &:hover{
+        color: $gold;
+    }
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+}
+
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.card-content {
+    @media(max-width: 991px) {
+        margin-bottom: 30px;
+    }
+}
+
+.ntw-logo {
+    max-width: 50px;
+
+    svg {
+        fill: $white;
+        max-height: 25px;
+    }
+    &:hover{
+        svg{
+            fill: $gold;
+        }
     }
 }

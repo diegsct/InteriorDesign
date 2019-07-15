@@ -1,0 +1,21 @@
+footer {
+    background: $soft-black;
+    color: $grey !important;
+
+    .nav-menu {
+        .nav-item {
+            &:hover {
+                border: none !important;
+
+                a {
+                    color: $gold;
+                }
+            }
+
+            a {
+                color: $grey;
+            }
+            justify-content: center;
+        }
+    }
+}

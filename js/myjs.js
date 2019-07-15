@@ -7,4 +7,9 @@ $(document).ready(function(){
     cssEase: 'linear',
     arrows: false
   });
+
+  $('.toggle-btn').click(function(){
+    $('.nav-menu').toggle(500);
+  });
+
 });

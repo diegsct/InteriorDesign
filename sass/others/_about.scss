@@ -1,0 +1,116 @@
+.about {
+    .container {
+        padding: 0 25px;
+
+        img {
+            height: 200px;
+        }
+    }
+
+    background: $marmol;
+}
+
+.designer-img {
+    img {
+        width: 100%;
+        max-width: 630px;
+    }
+}
+
+.how-i-work {
+    background: #f6f6f6;
+    position: relative;
+
+    // background-image: url(../img/piedra.jpg);
+    // background-position: top right;
+    // background-position-y: 75px;
+    // background-size: 30% 85%;
+    // background-repeat: no-repeat;
+    .wall {
+        position: absolute;
+        right: 0;
+        width: 35%;
+        height: 83%;
+        background-image: url("../img/piedra.jpg");
+
+        @media(max-width: 1200px) {
+            height: 68%;
+        }
+
+        @media(max-width: 991px) {
+            width: 100%;
+            height: 50%;
+        }
+    }
+
+    .container {
+        position: relative;
+
+        .designer-txt {
+            h2 {
+                margin-top: 100px;
+
+                @media(max-width: 991px) {
+                    margin-top: 0;
+                }
+            }
+
+            hr {
+                width: 10%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            padding: 100px;
+
+            @media(max-width: 1500px) {
+                padding: 50px;
+            }
+
+            @media(max-width: 1200px) {
+                padding: 30px 50px;
+            }
+
+            @media(max-width: 991px) {
+                padding: 75px 75px 75px 150px;
+            }
+
+            @media(max-width: 767px) {
+                padding: 50px 15px 50px 75px;
+            }
+        }
+    }
+
+    .rectangle {
+        position: absolute;
+        width: 90%;
+        background: #ffffff;
+        height: 95%;
+        right: 0%;
+        z-index: 0;
+        top: 100px;
+        box-shadow: 3px 3px 11px #dcdcdc;
+
+        @media(max-width: 1200px) {
+            top: 50px;
+        }
+    }
+}
+
+.my-projects {
+    background: $marmol;
+
+    .container {
+        margin-top: 2rem;
+    }
+
+    hr {
+        width: 10%;
+    }
+
+    .card {
+        border: none;
+        box-shadow: 3px 3px 11px #dcdcdc;
+        margin: 0 20px;
+    }
+}

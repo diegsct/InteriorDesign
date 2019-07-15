@@ -1,12 +1,18 @@
-$marmol:#D3D2D0;
+$marmol:#f6f6f6;
 $bronze:#8C713F;
 $gold:#BAA668;
 $goldest:#D9B036;
 $white:#ffffff;
 $black:#000000;
+$soft-black:#212121;
 $blue:#324845;
+$grey:#757575;
 
 $raleway:'Raleway',serif;
+$dm:'DM Serif Display', serif;
+
 
 @import "others/default";
 @import "others/header";
+@import "others/about";
+@import "others/footer";
